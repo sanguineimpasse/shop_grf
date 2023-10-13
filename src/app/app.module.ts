@@ -7,6 +7,7 @@ import { LoginModule } from './login/login.module';
 import { LayoutModule } from './layout/layout.module';
 import { RegistrationModule } from './registration/registration.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -16,7 +17,7 @@ import { RegistrationModule } from './registration/registration.module';
     AppRoutingModule,
     LoginModule,
     LayoutModule,
-    RegistrationModule
+    RegistrationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
