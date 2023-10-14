@@ -1,4 +1,5 @@
 <div class="main-container">
+    <div class="color-filter"></div>
     <div class="background-image"></div>
     <div class="foreground-container">
         <div class="document-container">
@@ -8,22 +9,25 @@
                 </div>
                 <div class="form-container">
                     <form action="" method="post">
-                        <label for="username">username</label>
+                        <label for="username">
+                            username or email address
+                            <input type="text" name="username" id="username" required autofocus/>
+                        </label> 
+                        <label for="password">
+                            password
+                            <input type="password" name="password" id="password" required/>
+                        </label>
+                        <a href="login"><p class="forgot">forgot password?</p></a>
+                        <button name="submit" role="button" class="form-button">Login</button>
                         <br>
-                        <input type="text" name="username" required autofocus/>
-                        <br>
-                        <label for="password">password</label>
-                        <br>
-                        <input type="password" name="password" required/>
-                        <a href="#"><p class="forgot">forgot password?</p></a>
-                        <button type="button" name="submit" role="button" class="form-button">Login</button>
-                        <br>
-                        <button type="button" role="button" class="form-button">Register</button>
-                    </form> 
+                    </form>
+                    <button class="form-button" role="button">Register</button> 
                 </div>
             </div>
             <span class="attribution">
-                Photo by <a href="https://unsplash.com/@havasuartist?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Susan Weber</a> on <a href="https://unsplash.com/photos/MrtjMjQZQRw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                <p class="att-text">
+                    Photo by <a href="https://unsplash.com/@havasuartist?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Susan Weber</a> on <a href="https://unsplash.com/photos/MrtjMjQZQRw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
             </span>
         </div> 
     </div>
