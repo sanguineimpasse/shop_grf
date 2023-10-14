@@ -1,30 +1,32 @@
 <nav class="sidenav-container">
     <div class="logo-container">
-        <img src="../../../assets/img/logo-white.png" alt="logo should be here" class="img-logo">
+        <img src="../../../assets/img/logo.png" alt="logo should be here" class="img-logo">
         <span class="logo-website-name">Typist</span>
     </div>
-
-    <a class="sidenav-nav-link" 
-    [routerLink]="['dashboard']">
-        <i class="sidenav-link-icon"></i>
-        <span class="sidenav-link-title">Dashboard</span>
-    </a>
-    <a class="sidenav-nav-link" 
-    [routerLink]="['products']">
-        <i class="sidenav-link-icon"></i>
-        <span class="sidenav-link-title">Products</span>
-    </a>
-    <!--i don't know if pushing elements should be done like this haha :DD-->
-    <div class="sidenav-links-separator"></div>
-    <!--this should work for now :))))-->
-    <a class="sidenav-nav-link sidenav-link-bottom" 
-    [routerLink]="">
-        <i class="sidenav-link-icon"></i>
-        <span class="sidenav-link-title">Settings</span>
-    </a>
-    <a class="sidenav-nav-link sidenav-link-bottom" 
-    [routerLink]="">
-        <i class="sidenav-link-icon"></i>
-        <span class="sidenav-link-title">Logout</span>
-    </a>
+    <div class="sidenav-links-container">
+        <a class="sidenav-nav-link" 
+        [routerLink]="['dashboard']">
+            <i class="sidenav-link-icon"></i>
+            <span class="sidenav-link-title">Dashboard</span>
+        </a>
+        <a class="sidenav-nav-link" 
+        [routerLink]="['products']">
+            <i class="sidenav-link-icon"></i>
+            <span class="sidenav-link-title">Products</span>
+        </a>
+        <!--i don't know if pushing elements should be done like this haha :DD-->
+        <div class="sidenav-spacer"></div>
+        <!--this should work for now :))))-->
+        <a class="sidenav-nav-link sidenav-link-bottom" 
+        [routerLink]="">
+            <i class="sidenav-link-icon"></i>
+            <span class="sidenav-link-title">Settings</span>
+        </a>
+        <a class="sidenav-nav-link sidenav-link-bottom" 
+        [routerLink]="">
+            <i class="sidenav-link-icon"></i>
+            <span class="sidenav-link-title">Logout</span>
+        </a>
+    </div>
+    
 </nav>
