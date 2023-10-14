@@ -98,7 +98,8 @@ h1{
                 color: var(--nav-hover-link-text);
             }
             .forgot{
-                color: var(--nav-shadow);
+                padding: 2px 0px 2px;
+                color: var(--login-link-text);
             }
             .forgot:hover{
                 color: var(--nav-hover-link-text);
