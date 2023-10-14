@@ -1,0 +1,31 @@
+.topnav-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    height: 5vw;
+    width: 100%;
+    background-color: var(--bg-sidenav);
+    box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.2);
+}
+
+.topnav-links-container{
+    padding: 1vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-end;
+
+    .topnav-profile{
+        align-self: flex-end;
+
+        .topnav-username{
+            font-size: 1.3rem;
+        }
+    }
+   
+    .topnav-spacer{
+        flex: 1;
+    }
+}
