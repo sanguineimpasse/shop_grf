@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+    RESET CSS
+*/
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, em, img, strong, small, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    outline: 0;
+    background: transparent;
+  }
+  
+  /* Reset box sizing to content-box */
+  *, *:before, *:after {
+    box-sizing: content-box;
+  }
+  
+  /* Reset headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+  }
+  
+  /* Remove list styles (bullet points) */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* Remove anchor (a) text decoration */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Ensure images are scalable and don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Set default background color and text color */
+  body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Remove browser default input and textarea styles */
+  input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  /* Remove focus outlines */
+  a, input, select, textarea, button {
+    outline: none;
+  }
+  
+  /* Remove inner spacing in buttons */
+  button {
+    padding: 0;
+  }
+  
+  /* Standardize HTML5 elements */
+  article, aside, figure, footer, header, nav, section {
+    display: block;
+  }
+  
+  /* Prevent horizontal scroll */
+  html {
+    overflow-x: hidden;
+  }
