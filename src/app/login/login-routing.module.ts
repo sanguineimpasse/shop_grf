@@ -7,6 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: LoginComponent
+  },
+
+  //i just added this idk if this is right
+  {
+    path:'registration',
+    loadChildren: () => import('../registration/registration.module').then(mod=>mod.RegistrationModule)
   }
 ];
 
