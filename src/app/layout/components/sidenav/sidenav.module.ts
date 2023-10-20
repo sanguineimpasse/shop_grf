@@ -6,9 +6,7 @@ import { SidenavRoutingModule } from './sidenav-routing.module';
 
 
 @NgModule({
-  declarations: [
-    SidenavComponent
-  ],
+  declarations: [],
   imports: [
     CommonModule,
     SidenavRoutingModule
