@@ -1,9 +1,9 @@
-<div class="main-container">
+<div class="page-main">
     <div class="color-filter"></div>
     <div class="background-image"></div>
     <div class="foreground-container">
-        <div class="document-container">
-            <div class="document-items-container">
+        <div class="document-fullpage-container">
+            <div class="document-items">
                 <div class="title-container">
                     <h1>Welcome back.</h1>
                 </div>
@@ -11,24 +11,26 @@
                     <form action="" method="post">
                         <label for="username">
                             username or email address
-                            <input type="text" name="username" id="username" required autofocus/>
+                            <input class="text-input" type="text" name="username" id="username" required autofocus/>
                         </label> 
                         <label for="password">
                             password
-                            <input type="password" name="password" id="password" required/>
+                            <input class="text-input" type="password" name="password" id="password" required/>
                         </label>
                         <a href="login"><p class="forgot">forgot password?</p></a>
-                        <button name="submit" role="button" class="form-button">Login</button>
+                        <input type="submit" class="form-button" value="Login">
                         <br>
+                        <button [routerLink]="['registration']" class="form-button" role="button">Register</button> 
                     </form>
-                    <button [routerLink]="['registration']" class="form-button" role="button">Register</button> 
                 </div>
             </div>
+            <!--
             <span class="attribution">
                 <p class="att-text">
                     Photo by <a href="https://unsplash.com/@havasuartist?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Susan Weber</a> on <a href="https://unsplash.com/photos/MrtjMjQZQRw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
                 </p>
             </span>
+            -->
         </div> 
     </div>
 </div>

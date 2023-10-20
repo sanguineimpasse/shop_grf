@@ -1,4 +1,4 @@
-.main-container{
+.page-main{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -15,7 +15,7 @@
         height: 100vh;
         background-size: cover;
         box-shadow: inset 0 0 100px #000;
-        filter: grayscale(60%) blur(3px);
+        filter: grayscale(60%);
     }
     .color-filter{
         position: absolute;
@@ -29,21 +29,21 @@
 
 h1{
     width: 100%;
-    font-size: 5rem;
+    font-size: 10vh;
     color: white;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
     text-align: center;
 }
 
 
-.document-container{
+.document-fullpage-container{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .document-items-container{
+    .document-items{
         width: 80vw;
         height: 100vh;
         display: flex;
@@ -58,33 +58,40 @@ h1{
         }
     
         .form-container{
-            width: 17vw;
+            width: 35vh;
 
             display: flex;
             flex-flow: column wrap;
-            gap: 10px;
+            gap: 20px;
             align-items: center;
             justify-content: flex-start;
             
-            padding: 1.4vw 1.2vw;
-            background-color: var(--bg-sidenav);
+            padding: 2vh 1.8vh;
+            background-color: var(--bg-sidenav-transparent);
+            
             border-radius: 8px;
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
             font-size: 1rem;
 
-            input{
-                padding: 0.2vw;
-                margin-bottom: 1vw;
+
+            label{
+                font-size: 2.2vh;
+                margin-bottom: 0.25vh;
+            }
+
+            .text-input{
+                padding: 0.4vh 0vw;
+                margin-bottom: 0.3vh;
                 width: 100%;
                 border: 1px solid black;
                 border-radius: 4px;
             }
-            input:focus{
+            .text-input:focus{
                 border: 2px solid var(--login-input-focus);
             }
 
             .form-button{
-                font-size: 1.05rem;
+                font-size: 1.9vh;
                 width: 100%;
                 padding: 0.3vw 0px;
                 margin-top: 0.3;
@@ -98,6 +105,7 @@ h1{
                 color: var(--nav-hover-link-text);
             }
             .forgot{
+                font-size: 1.7vh;
                 padding: 2px 0px 2px;
                 color: var(--login-link-text);
             }
@@ -119,3 +127,8 @@ h1{
     }
 }
 
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size: 7.5vh;
+    }
+}
