@@ -5,6 +5,7 @@ import { LayoutComponent } from './layout.component';
 import { TopnavComponent } from '../components/topnav/topnav.component';
 import { SidenavComponent } from '../components/sidenav/sidenav.component';
 import { ScreenComponent } from '../components/screen/screen.component';
+import { UserManagementComponent } from './user-management/user-management.component';
 
 
 
@@ -13,7 +14,8 @@ import { ScreenComponent } from '../components/screen/screen.component';
     LayoutComponent,
     TopnavComponent,
     SidenavComponent,
-    ScreenComponent
+    ScreenComponent,
+    UserManagementComponent
   ],
   imports: [
     CommonModule,
