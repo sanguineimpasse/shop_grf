@@ -1,1 +1,8 @@
-<p>products works!</p>
+<div class="cards-container">
+    <app-card *ngFor = "let data of productData"
+    title="{{data.title}}"
+    content="{{data.content}}"
+    subContent="{{data.subContent}}"
+    ></app-card>
+</div>
+

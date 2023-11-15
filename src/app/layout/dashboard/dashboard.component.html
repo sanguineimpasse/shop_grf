@@ -1,2 +1,7 @@
-<p>dashboard works!</p>
-<app-card></app-card>
+<div class="cards-container">
+    <app-card *ngFor = "let data of cardData"
+    title="{{data.title}}"
+    content="{{data.content}}"
+    subContent="{{data.subContent}}"
+    ></app-card>
+</div>

@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path:'login',
-    loadChildren: () => import('../../../login/login-routing.module').then(mod=>mod.LoginModule)
+    loadChildren: () => import('../../../login/login.module').then(mod=>mod.LoginModule)
   }
 ];
 

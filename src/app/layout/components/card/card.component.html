@@ -1,1 +1,21 @@
-<p>card works!</p>
+<div class="card-container">
+    <div class="image-container">
+        <img src="../../../../assets/img/card-placeholder.jpg" alt="" class="image">
+    </div>
+    <div class="para-container">
+        <span class="text">
+            <p>Title - {{title}}</p>
+            <p>Content - {{content}}</p>
+            <p>Subcontent - {{subContent}}</p>
+        </span>
+    </div>
+    <div *ngIf = "showSecondCard"> 
+        <div class="para-container">
+            <span class="text">
+                <p>Title - {{title}}</p>
+                <p>Content - {{content}}</p>
+                <p>Subcontent - {{subContent}}</p>
+            </span>
+        </div>
+    </div>
+</div>

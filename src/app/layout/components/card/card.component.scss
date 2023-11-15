@@ -1,0 +1,38 @@
+.card-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 18vw;
+    width: 16vw;
+    background-color: rgb(8, 49, 12);
+    border: 2px solid var(--nav-hover-link-text);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+    .image-container{
+        height: 50%;
+        max-width: 100%;
+        .image{
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+    }
+    .para-container{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        background-color: var(--card-color);
+        width: 100%;
+        min-height: 50%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+
+        .text{
+            padding: 0.3vw 0.4vw;
+        }
+    }
+}
+
+
+
